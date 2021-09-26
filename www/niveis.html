@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gerenciador de Estoque</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="components/acao.js"></script>
+         <script src="components/loader.js"></script>
+        <script src="lib/onsenui/js/onsenui.min.js"></script>
+        <link rel="stylesheet" href="components/loader.css">
+        <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+        <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+        <!-- css -->
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    margin-top: 2%;
+    margin-top: 60%;
+    margin-left: 25%;   
+    display: flex;
+    justify-content: center;
+
+}
+.contato{
+    width: 100%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+#field{
+    cursor: pointer;
+}
+.listaNivel{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+    <section class="content">
+        <div class="contato">
+            <form id="cadastroNivel">
+                Digite o Nome do Nível:<br><br>
+                <input class="field" type="text" name="nome" id="nome"><br>
+                <input class="field" id="field" type="submit" value="Cadastrar"><br>
+                <span id="saida" style="color:red;"></span>
+            </form>
+        <ul id="listaNivel" class="listaNivel">
+        </ul>
+        </div>
+    </section>
+</body>
+</html>
